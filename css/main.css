@@ -2,21 +2,57 @@ html {
   font-family: Georgia, serif;
 }
 
-.banner {
-  background-image: url("../images/earth-horizon.jpg");
-  background-image: linear-gradient(to bottom, rgba(73, 85, 98, 0), rgba(73, 85, 98, .9));
-  background-size: cover;
+.wrap {
+  background-color: #495562;
 }
 
 .container {
-  padding-top: 15em;
+  max-height: 500px;
 }
 
-h1, p {
+h1 {
   color: #fff;
+}
+
+p {
+  color: #efefef;
 }
 
 .btn-ghost {
   color: #fff;
   border-color: #97a49b;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .wrap {
+    background-image: linear-gradient(to bottom, rgba(73, 85, 98, 0), rgba(73, 85, 98, .8));
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: 40px;
+  }
+
+  .banner {
+    position: relative;
+    max-height: 500px;
+  }
+
+  .booking {
+    text-align: right;
+  }
+
+  .btn-ghost {
+    color: #fff;
+    border-color: #fff;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .wrap {
+    bottom: 20px;
+    left: 162px;
+  }
+
 }
